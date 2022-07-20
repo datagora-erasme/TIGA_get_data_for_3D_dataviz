@@ -226,7 +226,7 @@ def createTable(filename):
     conn = sqlite3.connect('StockEtablissementGeoloc.db')
     c = conn.cursor()
     tablename = filename[:-4]
-    print("tablename : ", tablename)
+    # print("tablename : ", tablename)
     with open(filename, 'r') as f:
 
         #supression de la table
@@ -237,26 +237,26 @@ def createTable(filename):
 
         #création de la table
         headers = next(f).split(";")
-        print(headers)
-        print("longueur headers : ", len(headers))
+        # print(headers)
+        # print("longueur headers : ", len(headers))
         sql = f'CREATE TABLE ' + tablename + ' ('
         for header in headers:
             sql += str(header) + ",\n"
         sql = sql[:-3]
         sql += ')'
-        print(sql)
+        # print(sql)
         c.execute(sql)
 
         sql = "INSERT INTO " +  tablename + " VALUES ("
         for k in range(len(headers)-1):
             sql += "?,"
         sql += '?)'
-        print("deuxieme sql : ", sql)
+        # print("deuxieme sql : ", sql)
         for row in f:
             try:
                 c.execute(sql, row.split(";"),)
             except:
-                print(row)
+                print("Cette ligne n'a pas été importée : ", row)
     conn.commit()
 
 
@@ -267,7 +267,7 @@ def join_tables(files):
     join_tables va ouvrir la bdd StockEtablissementGeoloc.db et va faire la jointure entre les deux tables précédemment créées
     """
     filenames = [f[:-4] for f in files]
-    print(filenames)
+    # print(filenames)
     ## filenames est une liste contenant le nom des tables à joindre de la database
 
     conn = sqlite3.connect('StockEtablissementGeoloc.db')
@@ -288,7 +288,7 @@ def join_tables(files):
     sql += """ AS b on a.siret = b.siret
     WHERE trancheEffectifsEtablissement IS NOT "" and trancheEffectifsEtablissement IS NOT "NN"
     """
-    print("\nLe SQL pour la jointure est : ", sql)
+    # print("\nLe SQL pour la jointure est : ", sql)
     c.execute(sql)
     conn.commit()
     conn.close()
@@ -362,7 +362,7 @@ def from_csv_to_geojson():
     with open("StockEtablissementGeolocActiviteGroupe.csv", 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for line in reader:
-            print(line)
+            # print(line)
             feature = dict(type='Feature')
             feature['properties'] = {}
             feature['properties']['Adresse'] = line['adresse']
