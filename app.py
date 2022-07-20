@@ -320,6 +320,7 @@ def add_activite_groupe():
     headers = next(csv_reader)
     headers['Activité'] = ''
     headers['Groupe'] = ''
+    headers["trancheEffectifsEtablissementValeur"] = ''
     table.close()
 
     """Récupération des données NAF codes, activités et groupes correspondant"""
@@ -341,15 +342,34 @@ def add_activite_groupe():
         new_csv = open("StockEtablissementGeolocActiviteGroupe.csv", 'w', encoding='utf-8', newline='')
         new_writer = csv.DictWriter(new_csv, fieldnames=headers)
         new_writer.writeheader()
+        dict_RH = {
+            0: 0,
+            1: 2,
+            2: 4,
+            3: 8,
+            11: 15,
+            12: 35,
+            21: 75,
+            22: 150,
+            31: 225,
+            32: 375,
+            41: 750,
+            42: 1500,
+            51: 3500,
+            52: 7500,
+            53: 10000
+        }
         
         for line in old_reader:
             i_naf = nafs.index(line['activitePrincipaleEtablissement'])
             line['Activité'] = definitions[i_naf][:-1]
             line['Groupe'] = groupes[i_naf][:-1]
+            line['trancheEffectifsEtablissementValeur'] = dict_RH[int(line['trancheEffectifsEtablissement'])]
             
             new_writer.writerow(line)
         
         new_csv.close()
+        print("Fin de l'ajout des colonnes Activité et Groupe ainsi que RH")
 
 def from_csv_to_geojson():
     """
@@ -368,7 +388,7 @@ def from_csv_to_geojson():
             feature['properties']['Adresse'] = line['adresse']
             feature['properties']['SIRET'] = line['siret']
             feature['properties']['SIREN'] = line['siren']
-            feature['properties']['Effectif'] = line['trancheEffectifsEtablissement']
+            feature['properties']['Effectif'] = line['trancheEffectifsEtablissementValeur']
             feature['properties']['activitePrincipaleEtablissement'] = line["activitePrincipaleEtablissement"]
             feature['properties']["nomenclatureActivitePrincipaleEtablissement"] = line["nomenclatureActivitePrincipaleEtablissement"]
             feature['properties']["Groupe"] = line['Groupe']
@@ -383,6 +403,8 @@ def from_csv_to_geojson():
     #save geoJSON
     with open("StockEtablissementGeolocActiviteGroupe.json", 'w', encoding='utf-8') as fp:
         json.dump(geoJSON, fp)
+
+    print("Fin de la conversion en geoJSON")
             
 
 
