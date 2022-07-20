@@ -1,5 +1,8 @@
 # TIGA_get_data_for_3D_dataViz
 
+## Pour Yassin : 
+Ouput data : StockEtablissementActiviteGroupe.json ou StockEtablissementActiviteGroupe.csv (as you want)
+
 ## Description du projet
 
 ### Motivation
