@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TIGA_get_data_for_3D_dataViz
 
 ## Description du projet
@@ -36,13 +35,11 @@ La source de données permettant de géocoder les lignes SIRET que l'on a extrai
 
 1. Cloner le repository
 2. Télécharger les données d'entrée et les placer dans le repository : [CSV avec la data](https://www.data.gouv.fr/fr/datasets/r/0651fb76-bcf3-4f6a-a38d-bc04fa708576) | [CSV avec la géolocalisation](https://www.data.gouv.fr/fr/datasets/geolocalisation-des-etablissements-du-repertoire-sirene-pour-les-etudes-statistiques/)
-3. Lancer le script python de traitement des données
+3. Installer les requirements (pip install -r requirements.txt)
+4. Lancer le script python app.py de traitement des données
 
 ## Mise à jour les données du projet
 
 ## Comment utiliser le projet
 
 ## Credits
-=======
-# TIGA_get_data_for_3D_dataViz
->>>>>>> parent of 4bcfc5b (Update README.md)
