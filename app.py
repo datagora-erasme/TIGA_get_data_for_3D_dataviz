@@ -8,6 +8,7 @@ import time
 import requests
 import re
 import sqlite3
+import json
 
 def get_interesting_naf_codes():
     """ 
@@ -325,7 +326,7 @@ def add_activite_groupe():
     nafs = []
     definitions = []
     groupes = []
-    with open("interesting_naf_codes.txt", 'r') as f:
+    with open("interesting_naf_codes.csv", 'r') as f:
         for line in f:
             naf, defin, groupe = line.split('|')
             # formatage du code naf comme dans le CSV
@@ -394,28 +395,28 @@ if __name__ == '__main__':
     ]
     
     # extraction des codes NAF qui nous intéressent de la page NOTION
-    get_interesting_naf_codes()
+    #get_interesting_naf_codes()
 
     # extraction des lignes qui sont à la fois dans un des départements d'intérêt et dans les codes NAF intéressants
-    filter_csv(departements)
+    #filter_csv(departements)
 
     # extraction de la bdd geolocalisée des SIRET uniquement les SIRET dans les départements d'intérêt
-    get_siret_from_dept(departements)
+    #get_siret_from_dept(departements)
 
     #jointure entre le fichier StockEtalissement_utf8_69_42_nafs.csv et le fichier des SIRET géolocalisés
     files = [
     "GeolocalisationEtablissement_69_42.csv",
     "StockEtablissement_utf8_69_42_nafs.csv"
     ]
-    for f in files:
+    #for f in files:
         # création des tables SQL
-        createTable(f)
+        #createTable(f)
     
     #jointure entre les deux tables
-    join_tables(files)
+    #join_tables(files)
 
     #export des données au format CSV
-    export_data_to_csv()
+    #export_data_to_csv()
 
     # ajout de l'activité et du groupe
     add_activite_groupe()

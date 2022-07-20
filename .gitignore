@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 GeolocalisationEtablissement_Sirene_pour_etudes_statistiques_utf8.csv
 StockEtablissement_utf8.csv
+GeolocalisationEtablissement_69_42.csv
+StockEtablissement_utf8_69_42_nafs.csv
+StockEtablissementGeoloc.csv
+StockEtablissementGeoloc.db
