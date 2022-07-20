@@ -84,13 +84,13 @@ def get_interesting_naf_codes():
     """save the list of NAF codes in order to reuse it later"""
     with open("interesting_naf_codes.csv", "w", encoding='utf-8') as f:
         # écriture du header
-        f.write("Code NAF; Définition; Groupe \n")
+        f.write("Code NAF|Définition|Groupe \n")
         for i in range(len(codes_sp)):
             f.write(codes_sp[i])
             #ajout de l'écriture f.write(',' + definition)
-            f.write('; ')
+            f.write('|')
             f.write(definitions[i])
-            f.write('; ')
+            f.write('|')
             f.write(groupes[i])
             f.write('\n')
     
@@ -142,7 +142,7 @@ def filter_csv(departements):
     # chargement en mémoire des codes nafs
     naf_codes = []
     with open("interesting_naf_codes.csv", 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter=';')
+        reader = csv.DictReader(f, delimiter='|')
         for line in reader:
             naf_codes.append(line["Code NAF"][:2]+'.'+line["Code NAF"][2:])
 
@@ -327,7 +327,7 @@ def add_activite_groupe():
     groupes = []
     with open("interesting_naf_codes.txt", 'r') as f:
         for line in f:
-            naf, defin, groupe = line.split('| ')
+            naf, defin, groupe = line.split('|')
             # formatage du code naf comme dans le CSV
             naf = naf[:2] + '.' + naf[2:]
             nafs.append(naf)
@@ -394,7 +394,7 @@ if __name__ == '__main__':
     ]
     
     # extraction des codes NAF qui nous intéressent de la page NOTION
-    #get_interesting_naf_codes()
+    get_interesting_naf_codes()
 
     # extraction des lignes qui sont à la fois dans un des départements d'intérêt et dans les codes NAF intéressants
     filter_csv(departements)

@@ -1,0 +1,278 @@
+Code NAF|Définition|Groupe 
+3511Z|production d’électricité|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3512Z|transport d’électricité|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3513Z|distribution d’électricité|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3514Z|commerce d’électricité|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3521Z|production de combustibles gazeux|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3522Z|distribution de combustibles gazeux par conduite|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3523Z|commerce de combustibles gazeux par conduite|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3600Z|captage, traitement et distribution d’eau|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3700Z|collecte et traitement des eaux usées|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3811Z|collecte des déchets non dangereux|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3812Z|collecte des déchets dangereux|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3821Z|traitement et élimination des déchets non dangereux|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3822Z|traitement et élimination des déchets dangereux|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3832Z|récupération de déchets triés|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3900Z|dépollution et autres services de gestion des déchets|Production et distribution d’électricité, de gaz et d’eau : gestion des déchets
+3211Z|frappe de monnaie|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3212Z|fabrication d’article de joaillerie et bijouterie|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3213Z|fabrication d‘articles de bijouterie fantaisie et articles similaires|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3220Z|fabrication d’instruments de musique|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3230Z|fabrication d’articles de sport|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3240Z|fabrication de jeux et jouets|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3250A|fabrication de matériel médico-chirurgical et dentaire|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3250B|fabrication de lunettes|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3291Z|fabrication d’articles de brosserie|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3299Z|autres activités manufacturières n.c.a|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3311Z|réparation d’ouvrages en métaux|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3312Z|réparation de machines et équipements mécaniques|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3313Z|réparation de matériels électroniques et optiques|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3314Z|réparation d’équipements électroniques|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3315Z|réparation navale|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3316Z|réparation et maintenance d’aéronefs et d’engins spatiaux|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3317Z|réparation et maintenance d’autres équipements de transport|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3319Z|réparation d’autres équipements|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3320A|installation de structures métalliques chaudronnées et de tuyauterie|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3320B|installation de machines et équipements mécaniques|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3320C|conception d’ensemble et assemblage sur site industriel et d’équipements de contrôle des processus industriels|Autres industries manufacturières : réparation et installation de machines et d’équipements
+3320D|installation d’équipements électriques, de matériel électroniques, et optiques ou d’autres matériels|Autres industries manufacturières : réparation et installation de machines et d’équipements
+2410Z|sidérurgie|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2420Z|fabrication de tubes, tuyaux, profilés creux et accessoires correspondant en acier|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2431Z|étirage à froid de barres|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2432Z|laminage à froid de feuillards|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2433Z|profilage à froid par formage ou pliage|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2434Z|tréfilage à froid|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2442Z|production de métaux précieux|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2442Z|métallurgie de l’aluminium|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2443Z|métallurgie du plomb, du zinc ou de l’étain|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2444Z|métallurgie du cuivre|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2445Z|métallurgie des autres métaux non ferreux|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2446Z|élaboration et transformation de matières nucléaires|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2451Z|fonderie de fonte|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2452Z|fonderie d’acier|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2453Z|fonderie de métaux légers|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2454Z|fonderie d’autres métaux non ferreux|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2511Z|fabrication de structures métalliques et de parties de structures|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2512Z|fabrication de portes et fenêtres en métal|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2521Z|fabrication de radiateurs et de chaudières pour le chauffage central|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2529Z|fabrication d’autres réservoirs, citernes et conteneurs métalliques|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2530Z|fabrication de générateurs de vapeur, à l’exception des chaudières pour le chauffage central|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2540Z| fabrication d’armes et de munitions|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2550A| forge, estampage, matriçage : métallurgie des poudres|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2550B|découpage, emboutissage|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2561Z|traitement et revêtement des métaux|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2562A|décolletage|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2562B|mécanique industrielle|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2571Z|fabrication de coutellerie|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2572Z| fabrication de serrures et de ferrures|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2573A|fabrication de moules et de modèles|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2573B|fabrication d’autres outillages|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2591Z|fabrication de fûts et emballages métalliques similaires|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2592Z|fabrication d’emballages métalliques légers|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2593Z|fabrication d’articles en fils métalliques, de chaines et de ressorts|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2594Z|fabrication de vis et de boulons|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2599A|fabrication d’articles métalliques ménagers|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2599B|fabrication d’autres articles métalliques|Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements
+2110Z|fabrication de produits pharmaceutiques de base|Industrie pharmaceutique
+2120Z|fabrication de préparations pharmaceutiques|Industrie pharmaceutique
+2811Z|fabrication de moteurs et turbines, à l’exception des moteurs d’avion et de véhicules|Fabrication de machines et équipements n.c.a.
+2812Z|fabrication d’équipements hydrauliques et pneumatiques|Fabrication de machines et équipements n.c.a.
+2813Z|fabrication d’autres pompes et compresseurs|Fabrication de machines et équipements n.c.a.
+2814Z|fabrication d’autres articles de robinetterie|Fabrication de machines et équipements n.c.a.
+2815Z|fabrication d’engrenages et d’organes mécaniques de transmission|Fabrication de machines et équipements n.c.a.
+2821Z|fabrication de fours et brûleurs|Fabrication de machines et équipements n.c.a.
+2822Z|fabrication de matériel de levage et de manutention|Fabrication de machines et équipements n.c.a.
+2823Z|fabrication de machines et d’équipements de bureau (à l’exception des ordinateurs et équipements périphériques|Fabrication de machines et équipements n.c.a.
+2824Z|fabrication d’outillage portatif à moteur incorporé|Fabrication de machines et équipements n.c.a.
+2825Z|fabrication d’équipements aérauliques et frigorifiques industriels|Fabrication de machines et équipements n.c.a.
+2829A|fabrication d’équipements d’emballage, de conditionnement et de pesage|Fabrication de machines et équipements n.c.a.
+2829B|fabrication d’autres machines d’usage général|Fabrication de machines et équipements n.c.a.
+2830Z|fabrication de machines agricoles et forestières|Fabrication de machines et équipements n.c.a.
+2841Z|fabrication de machines-outils pour le travail des métaux|Fabrication de machines et équipements n.c.a.
+2849Z|fabrication d’autres machines-outils|Fabrication de machines et équipements n.c.a.
+2891Z|fabrication de machines pour la métallurgie|Fabrication de machines et équipements n.c.a.
+2892Z|fabrication de machines pour l’extraction ou la construction|Fabrication de machines et équipements n.c.a.
+2893Z|fabrication de machines pour l’industrie agro-alimentaire|Fabrication de machines et équipements n.c.a.
+2894Z|fabrication de machines pour les industries textiles|Fabrication de machines et équipements n.c.a.
+2895Z|fabrication de machines pour les industries du papier et du carton|Fabrication de machines et équipements n.c.a.
+2896Z|fabrication de machines pour le travail du caoutchouc ou des plastiques|Fabrication de machines et équipements n.c.a.
+2899A|fabrication de machines d’imprimerie|Fabrication de machines et équipements n.c.a.
+2899B|fabrication d’autres machines spécialisées|Fabrication de machines et équipements n.c.a.
+2011Z|fabrication de gaz industriels|Industrie chimique
+2012Z|fabrication de colorants et de pigments|Industrie chimique
+2013A|enrichissement et retraitement des matières nucléaires|Industrie chimique
+2013B|fabrication d’autres produits chimiques inorganiques de base n.c.a.|Industrie chimique
+2014Z|fabrication d’autres produits chimiques organiques de base|Industrie chimique
+2015Z|fabrication de produits azotés et d’engrais|Industrie chimique
+2016Z|fabrication de matières plastiques de base|Industrie chimique
+2017Z|fabrication de caoutchouc synthétique|Industrie chimique
+2020Z|fabrication de pesticides et d’autres produits agrochimiques|Industrie chimique
+2030Z|fabrication de peintures, vernis, encres et mastics|Industrie chimique
+2041Z|fabrication de savons, détergents et produits d’entretien|Industrie chimique
+2042Z|fabrication de parfums et de produits pour la toilette|Industrie chimique
+2051Z|fabrication de produits explosifs|Industrie chimique
+2052Z|fabrication de colles|Industrie chimique
+2053Z|fabrication d’huiles essentielles|Industrie chimique
+2059Z|fabrication d’autres produits chimiques n.c.a.|Industrie chimique
+2060Z|fabrication de fibres artificielles ou synthétiques|Industrie chimique
+1011Z|transformation et conservation de la viande de boucherie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1012Z|transformation et conservation de la viande de volaille|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1013A|préparation industrielle de produits à base de viande|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1013B|charcuterie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1020Z|transformation et conservation de poissons, de crustacés et de mollusques|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1031Z|transformation et conservation de pommes de terre|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1032Z|préparation de jus de fruits et légumes|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1039A|autre transformation et conservation de légumes|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1039B|transformation et conservation de fruits|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1041A|fabrication d’huiles et graisses brutes|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1041B|fabrication d’huiles et graisses raffinées|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1042Z|fabrication de margarines et graisses comestibles similaires|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1051A|fabrication de lait liquide et de produits frais|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1051B|fabrication de beurre|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1051C|fabrication de fromage|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1051D|fabrication d’autres produits laitiers|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1052Z|fabrication de glaces et sorbets|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1061A|meunerie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1061B|autre activités du travail des grains|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1062Z|fabrication de produits amylacés|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1071A|fabrication industrielle de pain et de pâtisserie fraiche|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1071B|cuisson de produits de boulangerie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1071C|boulangerie et boulangerie-pâtisserie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1071D|pâtisserie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1072Z|fabrication de biscuits, biscottes et pâtisseries de conservation|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1073Z|fabrication de pâtes alimentaires|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1081Z|fabrication de sucre|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1082Z|fabrication de cacao, chocolat et de produits de confiserie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1083Z|transformation du thé et du café|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1084Z|fabrication de condiments et assaisonnements|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1085Z|fabrication de plats préparés|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1086Z|fabrication d’aliments homogénéisés et diététiques|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1089Z|fabrication d’autres produits alimentaires n.c.a.|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1091Z|fabrication d’aliments pour animaux de ferme|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1092Z|fabrication d’aliment pour animaux de compagnie|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1101Z|production de boissons alcooliques distillées|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1102A|fabrication de vins effervescents|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1102B|vinification|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1103Z|fabrication de cidre et de vins de fruits|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1104Z|production d’autres boissons fermentées non distillées|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1105Z|fabrication de bière|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1106Z|fabrication de malt|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1107A|industrie des eaux de table|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1107B|production de boissons rafraichissantes|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+1200Z|fabrication de produits à base de tabac|Fabrication de denrées alimentaires, de boissons et de produits à base de tabac
+2910Z|construction de véhicules automobiles|Fabrication de matériels de transport
+2920Z|fabrication de carrosserie et remorques|Fabrication de matériels de transport
+2931Z|fabrication d’équipements électriques et électroniques automobiles|Fabrication de matériels de transport
+2932Z|fabrication d’autres équipements automobiles|Fabrication de matériels de transport
+3011Z|construction de navires et de structures flottantes|Fabrication de matériels de transport
+3012Z|construction de bateaux de plaisance|Fabrication de matériels de transport
+3020Z|construction de locomotives et d’autre matériel ferroviaire roulant|Fabrication de matériels de transport
+3030Z|construction aéronautique et spatiale|Fabrication de matériels de transport
+3040Z|construction de véhicules militaires de combat|Fabrication de matériels de transport
+3091Z|fabrication de motocycles|Fabrication de matériels de transport
+3092Z|fabrication de bicyclettes et de véhicules pour invalides|Fabrication de matériels de transport
+3099Z|fabrication d’autres équipements de transport n.c.a.|Fabrication de matériels de transport
+2211Z|fabrication et rechapage de pneumatiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2219Z|fabrication d’autres articles en caoutchouc|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2221Z|fabrication de plaques , feuilles, tubes et profilés en matières plastiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2222Z|fabrication d’emballages en matières plastiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2223Z|fabrication d’éléments en matières plastiques pour la construction|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2229A|fabrication de pièces techniques à base de matières plastiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2229B|fabrication de produits de consommation courante en matières plastiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2311Z|fabrication de verre plat|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2312Z|façonnage et transformation du verre plat|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2313Z|fabrication de verre creux|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2314Z|fabrication de fibres de verre|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2319Z|fabrication et façonnage d’autres articles en verre, y compris verre technique|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2320Z|fabrication de produits réfractaires|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2331Z|fabrication de carreaux en céramique|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2332Z|fabrication de briques, tuiles et produits de construction, en terre cuite|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2341Z|fabrication d’articles céramiques à usage domestique ou ornemental|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2342Z|fabrication d’appareils sanitaires en céramique|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2343Z|fabrication d’isolateurs et pièces isolantes en céramique|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2344Z|fabrication d’autres produits céramiques à usage technique|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2349Z|fabrication d’autres produits céramiques|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2351Z|fabrication de ciment|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2352Z|fabrication de chaux et plâtre|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2361Z|fabrication d’éléments en béton pour la construction|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2362Z|fabrication d’éléments en plâtre pour la construction|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2363Z|fabrication de béton prêt à l’emploi|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2364Z|fabrication de mortiers et bétons secs|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2365Z|fabrication d’ouvrages en fibre-ciment|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2369Z|fabrication d’autres ouvrages en béton, en ciment ou en plâtre|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2370Z|taille, façonnage et finissage de pierres|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2391Z|fabrication de produits abrasifs|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2399Z|fabrication d’autres produits minéraux non métalliques n.c.a.|Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques
+2711Z|fabrication de moteurs, génératrices et transformateurs électriques|Fabrication d’équipements électriques
+2712Z|fabrication de matériel de distribution et de commande électrique|Fabrication d’équipements électriques
+2720Z|fabrication de piles et d’accumulateurs électriques|Fabrication d’équipements électriques
+2731Z|fabrication de câbles de fibres optiques|Fabrication d’équipements électriques
+2732Z|fabrication d’autres fils et câbles électroniques ou électriques|Fabrication d’équipements électriques
+2733Z|fabrication de matériel d’installation électrique|Fabrication d’équipements électriques
+2740Z|fabrication d’appareils d’éclairage électrique|Fabrication d’équipements électriques
+2751Z|fabrication d’appareils électroménagers|Fabrication d’équipements électriques
+2752Z|fabrication d’appareils ménagers non électriques|Fabrication d’équipements électriques
+2790Z|fabrication d’autres matériels électriques|Fabrication d’équipements électriques
+1610A|sciage et rabotage du bois, hors imprégnation|Travail du bois, industries du papier et imprimerie
+1610B|imprégnation du bois|Travail du bois, industries du papier et imprimerie
+1621Z|fabrication de placage et de panneaux de bois|Travail du bois, industries du papier et imprimerie
+1622Z|fabrication de parquets assemblés|Travail du bois, industries du papier et imprimerie
+1623Z|fabrication de charpentes et d’autres menuiseries|Travail du bois, industries du papier et imprimerie
+1624Z|fabrication d’emballages en bois|Travail du bois, industries du papier et imprimerie
+1629Z|fabrication d’objets divers en bois ; fabrication d’objets en liège, vannerie et sparterie|Travail du bois, industries du papier et imprimerie
+1711Z|fabrication de pâte à papier|Travail du bois, industries du papier et imprimerie
+1712Z|fabrication de papier et de carton|Travail du bois, industries du papier et imprimerie
+1721A|fabrication de carton ondulé|Travail du bois, industries du papier et imprimerie
+1721B|fabrication de cartonnages|Travail du bois, industries du papier et imprimerie
+1721C|fabrication d’emballages en papier|Travail du bois, industries du papier et imprimerie
+1722Z|fabrication d’articles en papier à usage sanitaire ou domestique|Travail du bois, industries du papier et imprimerie
+1723Z|fabrication d’articles de papeterie|Travail du bois, industries du papier et imprimerie
+1724Z|fabrication de papiers peints|Travail du bois, industries du papier et imprimerie
+1729Z|fabrication d’autres articles en papier ou en carton|Travail du bois, industries du papier et imprimerie
+1310Z|préparation de fibres textiles et filature|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1320Z|tissage|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1330Z|ennoblissement textile|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1391Z|fabrication d’étoffes à mailles|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1392Z|fabrication d’articles textiles, sauf habillement|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1393Z|fabrication de tapis et moquettes|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1394Z|fabrication de ficelles, cordes et filets|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1395Z|fabrication de non-tissés, sauf habillement|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1396Z|fabrication d’autres textiles techniques et industriels|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1399Z|fabrication d’autres textiles n.c.a.|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1411Z|fabrication de vêtements en cuir|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1412Z|fabrication de vêtements de travail|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1413Z|fabrication de vêtements de dessus|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1414Z|fabrication de vêtements de dessous|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1419Z|fabrication d’autres vêtements et accessoires|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1420Z|fabrication d’articles en fourrure|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1431Z|fabrication d’articles chaussants à mailles|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1439Z|fabrication d’autres articles à mailles|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1511Z|apprêt et tannage des cuirs ; préparation et teinture des fourrures|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1512Z|fabrication d’articles de voyage, de maroquinerie et de sellerie|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+1520Z|fabrication de chaussures|Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure
+2611Z|fabrication de composants électroniques|Fabrication de produits informatiques, électroniques et optiques
+2612Z|fabrication de cartes électroniques assemblées|Fabrication de produits informatiques, électroniques et optiques
+2620Z|fabrication d’ordinateurs et d’équipements périphériques|Fabrication de produits informatiques, électroniques et optiques
+2630Z|fabrication d’équipements de communication|Fabrication de produits informatiques, électroniques et optiques
+2640Z|fabrication de produits électroniques grand public|Fabrication de produits informatiques, électroniques et optiques
+2651A|fabrication d’équipements d’aide à la navigation|Fabrication de produits informatiques, électroniques et optiques
+2651B|fabrication d’instrumentation scientifique et technique|Fabrication de produits informatiques, électroniques et optiques
+2652Z|horlogerie|Fabrication de produits informatiques, électroniques et optiques
+2660Z|fabrication d’équipements d’irradiation médicale, d’équipements électromédicaux et électrothérapeutiques|Fabrication de produits informatiques, électroniques et optiques
+2670Z|fabrication de matériels optique et photographique|Fabrication de produits informatiques, électroniques et optiques
+2680Z|fabrication de supports magnétiques et optiques|Fabrication de produits informatiques, électroniques et optiques
+1910Z|cokéfaction|Cokéfaction et raffinage
+1920Z|raffinage du pétrole|Cokéfaction et raffinage
+0510Z|extraction de houille|Industries extractives
+0520Z|extraction de lignite|Industries extractives
+0610Z|extraction de pétrole brut|Industries extractives
+0620Z|extraction de gaz naturel|Industries extractives
+0710Z|extraction de minerais de fer|Industries extractives
+0721Z|extraction de minerais d’uranium et de thorium|Industries extractives
+0729Z|extraction d’autres minerais de métaux non ferreux|Industries extractives
+0811Z|extraction de pierres ornementales et de construction, de calcaire industriel, de gypse, de craie et d’ardoise|Industries extractives
+0812Z|exploitation de gravières et sablières, extraction d’argiles et de kaolin|Industries extractives
+0891Z|extraction des minéraux chimiques et d’engrais minéraux|Industries extractives
+0892Z|extraction de tourbe|Industries extractives
+0893Z|production de sel|Industries extractives
+0899Z|autres activités extractives n.c.a.|Industries extractives
