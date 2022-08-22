@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carte 3D - entreprises Lyon</title>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://unpkg.com/deck.gl@8.0.0/dist.min.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0-beta.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0-beta.1/mapbox-gl.css">
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://kit.fontawesome.com/2adc82431c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="panel">
+        <div id="switch-panel" class="panel">
+            <label id="affichage">Affichage automatique</label>
+            <label class="switch">
+                <input id="switch" type="checkbox" checked></input>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div id="control-panel" class="panel">
+            <div>
+                <label>Rayon des secteurs (mètres)</label>
+                <br>
+                <input id="radius" type="range" min="10" max="5000" step="10" value="100"></input>
+                <input id="radius-value" type="number" min="10" max="5000" value="100"></input>
+            </div>
+            <div>
+                <label>Opacité (%)</label>
+                <br>
+                <input id="opacity" type="range" min="1" max="100" step="1" value="100"></input>
+                <input id="opacity-value" type="number" min="1" max="100" step="1" value="100"></input>
+            </div>
+            <div>
+                <label>Echelle verticale</label>
+                <br>
+                <input id="elevationScale" type="range" min="10" max="500" step="10" value="250"></input>
+                <input id="elevationScale-value" type="number" min="10" max="500" value="250"></input>
+            </div>
+            <div id="capitaux-present">
+                <label>Capitaux francais (%)</label>
+                <br>
+                <input id="capitaux" type="range" min="0" max="100" step="1" value="0"></input>
+                <input id="capitaux-value" type="number" min="0" max="100" value="0"></input>
+            </div>
+            <div>
+                <label>Nombre de salariés</label>
+                <br>
+                <input id="value0" type="number" min="1"></input>
+                <span> - </span>
+                <input id="value1" type="number" min="1"></input>
+                <div id="filter"></div>
+            </div>
+        </div>
+
+        <div id="map-panel" class="panel">
+            <label id="map-control" style="cursor: pointer;">Fonds de carte</label>
+            <div id="map-display">
+                <div>
+                    <input type="radio" id="dark" name="map" value="dark" checked>
+                    <label class="radio" for="dark">sombre</label>
+                </div>
+                <div>
+                    <input type="radio" id="light" name="map" value="light">
+                    <label class="radio" for="light">clair</label>
+                </div>
+                <div>
+                    <input type="radio" id="outdoors" name="map" value="outdoors">
+                    <label class="radio" for="outdoors">terrain</label>
+                </div>
+                <div>
+                    <input type="radio" id="satellite" name="map" value="satellite">
+                    <label class="radio" for="satellite">satellite</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="legend-panel" class="panel">
+            <label id="legend-control" style="cursor: pointer;">Secteurs industriels</label>
+            <div id="legend-display"></div>
+        </div>
+
+        <div id="info-panel" class="panel">
+            <i class="fas fa-info-circle"></i>
+            <label id="info-control" style="cursor: pointer;">Infos</label>
+        </div>
+    </div>
+
+    <div id="info-display">
+        <h1>M.Ind. — Dataviz 3D</h1>
+
+        <p>
+            Cette interface est un prototype. Elle a pour objet de vérifier l’utilité d’une visualisation en 3D de jeux de données à l’échelle d’un territoire.
+            <br>
+            <br>
+
+            L’exemple choisi concerne certaines informations disponibles dans la base SIREN, à avoir les secteurs économiques des entreprises et leurs effectifs. Ceci exclut les entreprises n’ayant aucun salarié. Actuellement tous les secteurs d’activité principaux sont représentés.
+            <br>
+            <br>
+
+            Cet outil vous permet de filtrer les secteurs, de paramétrer le rayon des zones concernées (un rayon élargi permet d’identifier le secteur dominant d’un secteur, le détail sectoriel restant disponible au survol de la zone) et de filtrer le nombre de salariés.
+            <br>
+            <br>
+
+            Sont prévus par la suite :
+            <br>
+            - la prise en compte des sites de production (SIRET) et non des sièges sociaux (SIREN).
+            <br>
+            - un tri sera effectué afin de ne garder que les secteurs et sous-secteurs de l’industrie productive et manufacturière.
+            <br>
+            - l’ajout de données complémentaires (énergie, mobilité, emploi, environnement, PLU, végétalisation...).
+            <br>
+            - un filtre relatif aux parts de capitaux français, avec un accès réservé (gouvernance, éxecutif, dev. éco.).
+            <br>
+            <br>
+            
+            Le projet est disponible en <a href="https://github.com/bberthaud/Dataviz_Carte_3D-entreprises_Lyon">open source ici</a>. Le dispositif vous intéresse ? Vous en imaginez une nouvelle utilisation ? Contactez nous sur <a href="mailto:datagora@lists.erasme.org">datagora@lists.erasme.org</a>                    
+        </p>
+        <input type="button" id="info-ok" value="OK">
+    </div>
+</body>
+
+<script src="src/script.js"></script>
+
+</html>
