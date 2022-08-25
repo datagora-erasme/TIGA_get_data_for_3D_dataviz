@@ -49,4 +49,3 @@ La source de données permettant de géocoder les lignes SIRET que l'on a extrai
 
 ## Credits
 =======
-# TIGA_get_data_for_3D_dataViz
