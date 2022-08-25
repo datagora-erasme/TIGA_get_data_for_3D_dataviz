@@ -43,8 +43,6 @@ La source de données permettant de géocoder les lignes SIRET que l'on a extrai
 3. installer les librairies nécessaires (pip install -r requirements.txt)
 4. Lancer le script de traitement des données (py main.py)
 
-## Mise à jour les données du projet
-
 ## Comment utiliser le projet
 
 ## Credits
