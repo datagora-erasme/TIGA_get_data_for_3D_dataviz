@@ -40,8 +40,9 @@ La source de données permettant de géocoder les lignes SIRET que l'on a extrai
 
 1. Cloner le repository
 2. Télécharger les données d'entrée et les placer dans le repository ./data : [CSV avec la data](https://www.data.gouv.fr/fr/datasets/r/0651fb76-bcf3-4f6a-a38d-bc04fa708576) | [CSV avec la géolocalisation](https://www.data.gouv.fr/fr/datasets/geolocalisation-des-etablissements-du-repertoire-sirene-pour-les-etudes-statistiques/)
-3. installer les librairies nécessaires (pip install -r requirements.txt)
-4. Lancer le script de traitement des données (py main.py)
+3. Installer les librairies nécessaires (pip install -r requirements.txt)
+4. Spécifier les départements sur lesquels on veut traiter des données (de base '69' et '42')
+5. Lancer le script de traitement des données (py main.py)
 
 ## Comment utiliser le projet
 
