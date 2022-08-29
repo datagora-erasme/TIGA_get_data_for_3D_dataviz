@@ -338,7 +338,8 @@ def df_to_geojson(dataframe, latitude='lat', longitude='lng'):
 
 if __name__ == '__main__':
     departements = [
-        '69'
+        '69',
+        '42'
     ]
 
     t0 = time.time()
