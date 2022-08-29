@@ -10,6 +10,7 @@ import re
 import requests
 import pandas as pd
 
+
 def get_interesting_naf_codes():
     """
     Fonction qui va chercher sur la page notion ==>
@@ -92,17 +93,13 @@ def get_interesting_naf_codes():
         definitions += definition
 
         for code in codes_list:
-            # get_definition of NAF
-            i = text.index(code)
-            # print("indice de debut", i)
             codes_sp.append(code)
             code_naf = code[0:2] + '.' + code[2:]
             codes_naf.append(code_naf)
             groupes.append(nom_groupe)
 
-
-    #save the list of NAF codes in order to reuse it later
-    with open("interesting_naf_codes.csv", "w", encoding='utf-8') as file:
+    # save the list of NAF codes in order to reuse it later
+    with open("output/interesting_naf_codes.csv", "w", encoding='utf-8') as file:
         # écriture du header
         file.write("Code NAF|Définition|Groupe \n")
         for i in range(len(codes_sp)):
@@ -114,6 +111,7 @@ def get_interesting_naf_codes():
             file.write('\n')
 
     print("Extraction des NAFs codes : 100% terminé")
+
 
 def update_geoloc(depts):
     """
@@ -147,10 +145,11 @@ def update_geoloc(depts):
         else:
             final_chunk = pd.concat([final_chunk, chunk])
         batch_no += 1
-        print("Process update Geoloc", int(batch_no*chunk_size/32562762*100), '%')
+        print("Process update Geoloc", int(batch_no * chunk_size / 32562762 * 100), '%')
 
     # save final_chunk as a csv
     final_chunk.to_csv("data/GeolocProcessed.csv")
+
 
 def update_etablissement(depts):
     """
@@ -186,10 +185,11 @@ def update_etablissement(depts):
         else:
             final_df = pd.concat([final_df, temp_df])
         batch_no += 1
-        print("Process update_Etablissement", int(batch_no*chunk_size/32783873*100), '%')
+        print("Process update_Etablissement", int(batch_no * chunk_size / 32783873 * 100), '%')
 
-    #save processed df as a csv
+    # save processed df as a csv
     final_df.to_csv("data/EtablissementProcessed.csv")
+
 
 def etablissement_interesting_naf():
     """
@@ -201,7 +201,7 @@ def etablissement_interesting_naf():
 
     # chargement en mémoire des codes nafs
     naf_codes = []
-    with open("interesting_naf_codes.csv", 'r', encoding='utf-8') as file:
+    with open("output/interesting_naf_codes.csv", 'r', encoding='utf-8') as file:
         reader = csv.DictReader(file, delimiter='|')
         for line in reader:
             naf_codes.append(line["Code NAF"][:2] + '.' + line["Code NAF"][2:])
@@ -213,15 +213,16 @@ def etablissement_interesting_naf():
         new_df = input_df[input_df['activitePrincipaleEtablissement'] == code]
         final_df = pd.concat([final_df, new_df])
 
-    #save the final_df
-    final_df.to_csv("data/EtablissmentNAFProcessed.csv")
+    # save the final_df
+    final_df.to_csv("data/EtablissementNAFProcessed.csv")
+
 
 def joint_geoloc_etablissement():
     """
     funcion that joins Geoloc and Etablissement in order to create the output file
     """
 
-    df_geoloc = pd.read_csv('data/EtablissmentNAFProcessed.csv')
+    df_geoloc = pd.read_csv('data/EtablissementNAFProcessed.csv')
     df_etablissement = pd.read_csv('data/GeolocProcessed.csv')
 
     output_df = pd.merge(df_etablissement, df_geoloc, on='siret')
@@ -288,7 +289,7 @@ def joint_geoloc_etablissement():
     output_df = output_df.astype({'RH': int})
 
     # Add groupe and définitions
-    df_interesting = pd.read_csv("interesting_naf_codes.csv", delimiter='|')
+    df_interesting = pd.read_csv("output/interesting_naf_codes.csv", delimiter='|')
     df_interesting = df_interesting.astype('string')
     df_interesting.rename(columns={'Code NAF': 'NAF'}, inplace=True)
     df_interesting['NAF'] = df_interesting['NAF'].apply(lambda x: x[:2] + '.' + x[2:])
@@ -297,12 +298,13 @@ def joint_geoloc_etablissement():
     output_df.rename(columns={"Groupe ": 'Groupe', "Définition": "Activité"}, inplace=True)
 
     # export data to csv
-    output_df.to_csv("output.csv", index=False)
+    output_df.to_csv("output/output.csv", index=False)
 
-    #export data to geoJSON
+    # export data to geoJSON
     geo_json = df_to_geojson(dataframe=output_df)
-    with open('output.json', 'w', encoding='utf-8') as file:
+    with open('output/output.json', 'w', encoding='utf-8') as file:
         json.dump(geo_json, file)
+
 
 def df_to_geojson(dataframe, latitude='lat', longitude='lng'):
     """
@@ -324,26 +326,26 @@ def df_to_geojson(dataframe, latitude='lat', longitude='lng'):
             'type': 'Point',
             'coordinates': []
         }
-         # fill in the coordinates
+        # fill in the coordinates
         feature['geometry']['coordinates'] = [row[longitude], row[latitude]]
         # fill in the properties
         for prop in dataframe.columns:
             feature['properties'][prop] = row[prop]
-        #add this feature to the list of features
+        # add this feature to the list of features
         geojson['features'].append(feature)
     return geojson
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     departements = [
         '69'
     ]
 
     t0 = time.time()
-    #get_interesting_naf_codes()
-    #update_geoloc(departements)
-    #update_etablissement(departements)
-    #etablissement_interesting_naf()
+    get_interesting_naf_codes()
+    update_geoloc(departements)
+    update_etablissement(departements)
+    etablissement_interesting_naf()
     joint_geoloc_etablissement()
     t1 = time.time()
-    print("fini en : ", t1-t0, 's')
+    print("fini en : ", t1 - t0, 's')

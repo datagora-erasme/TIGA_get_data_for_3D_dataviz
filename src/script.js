@@ -27,6 +27,8 @@ d3.csv(filename).then(function (data) {
 
 const OPTIONS = ["radius", "opacity", "elevationScale"];
 
+/*
+old SECTOR_RANGE
 const SECTOR_RANGE = [
   "Activités de services administratifs",
   "Activités extra-territoriales",
@@ -50,8 +52,28 @@ const SECTOR_RANGE = [
   "Transports et entreposage",
   "Données manquantes"
 ];
+*/
+
+const SECTOR_RANGE = [
+  'Production et distribution d’électricité, de gaz et d’eau : gestion des déchets',
+  'Autres industries manufacturières : réparation et installation de machines et d’équipements',
+  'Métallurgie et fabrication de produits métalliques à l’exception des machines et des équipements',
+  'Industrie pharmaceutique',
+  'Fabrication de machines et équipements n.c.a.',
+  'Industrie chimique',
+  'Fabrication de denrées alimentaires, de boissons et de produits à base de tabac',
+  'Fabrication de matériels de transport',
+  'Fabrication de produits en caoutchouc et en plastique ainsi que d’autres produits minéraux non métalliques',
+  'Fabrication d’équipements électriques',
+  'Travail du bois, industries du papier et imprimerie',
+  'Fabrication de textiles, industries de l’habillement, industrie du cuir et de la chaussure',
+  'Fabrication de produits informatiques, électroniques et optiques',
+  'Cokéfaction et raffinage',
+  'Industries extractives'
+];
 
 // COLOR_RANGE length must be egal to SECTOR_RANGE length !
+/*
 const COLOR_RANGE = [
   [230, 25, 75],
   [60, 180, 75],
@@ -75,6 +97,17 @@ const COLOR_RANGE = [
   [255, 255, 255],
   [128, 128, 128]
 ];
+*/
+
+let COLOR_RANGE = [];
+
+for (i in SECTOR_RANGE) {
+  /*let value = i/SECTOR_RANGE.length*125 + 125;*/
+  let value = 255 ;
+  console.log(value);
+  /*COLOR_RANGE.push([Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255)]);*/
+  COLOR_RANGE.push([0, 0, value]);
+}
 
 const LIGHT_SETTINGS = {
   lightsPosition: [-0.144528, 49.739968, 8000, -3.807751, 54.104682, 8000],
